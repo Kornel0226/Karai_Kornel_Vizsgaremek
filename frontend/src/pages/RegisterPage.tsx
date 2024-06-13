@@ -132,7 +132,7 @@ const regAction = async ({ request }: { request: Request }) => {
 
         if (response.status < 300 && response.status >= 200) {
             console.log("sikeres regisztracio")
-            return null
+            window.location.href = "http://localhost:5173/receptek";
         }
     } catch (error) {
         console.log(error)

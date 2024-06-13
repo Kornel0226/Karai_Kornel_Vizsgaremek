@@ -8,7 +8,7 @@ const UserRecipes: FC<{ recipes: Recipe[], deleteRecipe: (recipe_id: number) => 
     //200x 304
     const navigate = useNavigate()
 
-    return <div className="bg-orange-300 min-h-[100vh] h-[115vh] p-10">
+    return <div className="bg-orange-300 min-h-[100vh] md:h-[115vh] lg:h-[115vh] p-10">
         <h1 className="text-[3rem] lg:text-[5rem] lg:text-left text-orange-500 font-bold mb-10">Recepteim</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-10 lg:gap-2">
             {recipes.map(recipe => <RecipeItem isOwn={true} key={recipe.recipe_id} deleteRecipe={() => deleteRecipe(recipe.recipe_id)} recipe={recipe} />)}

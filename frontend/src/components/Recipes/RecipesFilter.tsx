@@ -143,13 +143,13 @@ const RecipesFilter: FC<{ onSubmit: (filterObject: FilterObject) => void }> = ({
                             </div>
                         </li>
                     </ul>
-                    <button className="mt-2 p-2 bg-orange-700">Kreresés</button>
+                    <button className="mt-2 p-2 bg-orange-700">Keresés</button>
                 </Form>
             )}
 
             {isMobile && (
                 <div className="relative "> {/* Increase z-index value */}
-                    <button className=" absolute mt-4 ml-4 bg-green-800 p-2 rounded-md text-black" onClick={toggleFilters}> 
+                    <button className=" absolute mt-4 ml-4 bg-green-800 p-2 rounded-md text-black" onClick={toggleFilters}>
                         {isFiltersOpen ? 'Szűrők bezárása' : 'Szűrők megnyitása'}
                     </button>
                     <div className="top-1 left-0 h-max w-full bg-green-900 absolute" hidden={!isFiltersOpen}> {/* Increase z-index value */}
